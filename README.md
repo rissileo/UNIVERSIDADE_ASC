@@ -8,5 +8,7 @@ gerados na compatibilidade da base SQL Server 2008 R2, para melhor compatibilida
 
 No arquivo appsettings.json é possível configurar a string de conexão com o banco de dados.
 
+Para rodar, pode abrir o projeto no Visual Studio e executar com o IISExpress (indicado), publicar no IIS, ou rodar no VSCode.
+
 Agora é só executar o projeto ou publicar e rodar a aplicação.
 
