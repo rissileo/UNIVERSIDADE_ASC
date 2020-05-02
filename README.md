@@ -8,5 +8,5 @@ gerados na compatibilidade da base SQL Server 2008 R2, para melhor compatibilida
 
 No arquivo appsettings.json é possível configurar a string de conexão com o banco de dados.
 
-Agora é só executar o projeto ou publicar e rodar a página.
+Agora é só executar o projeto ou publicar e rodar a aplicação.
 
