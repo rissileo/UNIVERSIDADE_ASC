@@ -1,5 +1,5 @@
 # UNIVERSIDADE_ASC
-Projeto desenvolvido em .NET Core com Entity Framework 2.2 e AngularJS 1.7.9
+Projeto desenvolvido em .NET Core 3.1 com MVC, Entity Framework 2.2 e AngularJS 1.7.9
 
 Este projeto foi desenvolvido como desafio.
 
