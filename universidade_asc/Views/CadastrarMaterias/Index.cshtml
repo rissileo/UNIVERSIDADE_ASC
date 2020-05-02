@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar Matérias";
+}
+
+<div ng-app="appCadastrarMaterias" ng-controller="CadastrarMateriasController">
+    <span>Nome da Matéria: </span>
+    <input type="text" id="txtNomeMateria" class="form-control" ng-model="inParameter.dcMateria" />
+    <hr />
+    <span>Peso AV1: </span>
+    <input type="number" id="pesoAV1" min="1" max="100" class="form-control" ng-model="inParameter.pesoAV1" />
+    <span>Peso AV2: </span>
+    <input type="number" id="pesoAV2" min="1" max="100" class="form-control" ng-model="inParameter.pesoAV2" />
+    <span>Peso AV3: </span>
+    <input type="number" id="pesoAV2" min="1" max="100" class="form-control" ng-model="inParameter.pesoAV3" />
+    <hr />
+    <button class="btn-success" ng-click="CadastraMateria()">Cadastrar Matéria</button>
+    <hr />
+    <div class="alert alert-success" role="alert" ng-show="enableSuccessDialog">
+        {{sMessage}}
+    </div>
+    <div class="alert alert-danger" role="alert" ng-show="enableErrorDialog">
+        {{sMessage}}
+    </div>
+    <hr />
+    <h2>Matérias</h2>
+
+    <table>
+        <thead>
+            <th>Descricao</th>
+            <th>Peso AV1</th>
+            <th>Peso AV2</th>
+            <th>Peso AV3</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="mat in gridMateriaData">
+                <td data-column="Descricao">{{mat.dcMateria}}</td>
+                <td data-column="Peso AV1">{{mat.pesoAv1}}</td>
+                <td data-column="Peso AV3">{{mat.pesoAv2}}</td>
+                <td data-column="Peso AV1">{{mat.pesoAv3}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="~/js/Materias/jsCadastrarMaterias.js"></script>
+

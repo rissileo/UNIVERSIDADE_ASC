@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Gerar Turmas e Alunos";
+}
+
+<div ng-app="appGerarTurmasAlunos" ng-controller="GerarTurmasAlunosController">
+    <span>Número de turmas: </span>
+    <input type="number" id="qtdTurma" min="1" max="100" class="form-control" ng-model="inParameter.iQtdTurmas"/>
+    <span>Número de alunos por turma: </span>
+    <input type="number" id="qtdAlunosPorTurma" min="1" max="100" class="form-control" ng-model="inParameter.iQtdAlunosPorTurma"/>
+    <hr />
+    <button class="btn-success" ng-click="ProcessaGeracao()">Gerar</button>
+    <hr />
+    <div class="alert alert-success" role="alert" ng-show="enableSuccessDialog">
+        {{sMessage}}
+    </div>
+    <div class="alert alert-danger" role="alert" ng-show="enableErrorDialog">
+        {{sMessage}}
+    </div>
+</div>
+
+<script src="~/js/TurmasAlunos/jsTurmaAluno.js"></script>
+
